@@ -3,37 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Survey App - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
-        }
-        h1 {
+            padding: 0;
+            background: #f4f4f9;
             color: #333;
         }
-        a {
-            margin-top: 20px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
+        header {
+            background: #007BFF;
+            color: #fff;
             padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .logo {
+            height: 50px;
+        }
+        main {
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li a {
+            display: block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
             border-radius: 5px;
         }
-        a:hover {
-            background-color: #0056b3;
+        ul li a:hover {
+            background: #0056b3;
+        }
+        .create-survey {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+        .create-survey:hover {
+            background: #218838;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <a href="index.html" download="HelloWorld.html">Download This Page</a>
+    <header>
+        <h1>Survey App by SinabyHimself</h1>
+    </header>
+    <main>
+        <ul>
+            <li><a href="survey-details.html">Customer Feedback Survey</a></li>
+            <li><a href="survey-details.html">Product Satisfaction Survey</a></li>
+        </ul>
+        <a href="create-survey.html" class="create-survey">+ Create New Survey</a>
+    </main>
 </body>
 </html>

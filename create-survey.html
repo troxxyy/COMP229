@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Survey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #28a745;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background: #218838;
+        }
+        .back {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .back:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create Survey</h1>
+    </header>
+    <main>
+        <form action="index.html">
+            <label for="survey-title">Survey Title</label>
+            <input type="text" id="survey-title" placeholder="Enter survey title" required>
+            
+            <label for="survey-description">Description</label>
+            <textarea id="survey-description" rows="4" placeholder="Enter survey description"></textarea>
+            
+            <button type="submit">Save Survey</button>
+        </form>
+        <a href="index.html" class="back">Back to Home</a>
+    </main>
+</body>
+</html>
